@@ -1,23 +1,26 @@
 # Billeder
 
-Læg jeres renderinger og fotos her. Foreslåede filnavne (matcher placeholder-teksterne på sitet):
+Billeder brugt på sitet:
 
-- `placering.jpg` — kort/luftfoto i "Placering"-sliden
-- `render-1.jpg`, `render-2.jpg`, `render-3.jpg` — visualiseringerne i "Sådan kommer det til at se ud"
-- `logo-dif.svg`, `logo-dgi.svg`, `logo-dpf.svg` — forbund/interessent-logoer
+- `hero-exterior.jpg` — bygningen udefra (hero-baggrund, galleri, kontakt-slide)
+- `cafe-lounge.jpg` — café/lounge (baggrund på "Mere end padel", galleri)
+- `multihal.jpg` — multihallen (baggrund på "Projektet", galleri)
+- `lbi-logo.jpg` — Lynge-Broby IF-logo (top-bar, hero, footer) — vises som cirkel
+- `lbi-vaerdiord.jpg` — LBI værdiord/hjerte-grafik (ikke brugt endnu, klar til brug)
 
-Når filen ligger her, udskift den tilhørende placeholder-boks i `index.html`, fx:
+Renderingerne er komprimeret fra originalerne (~2,4 MB → ~300 KB) for hurtig indlæsning.
 
-```html
-<figure class="figure">
-  <img src="assets/images/render-1.jpg" alt="Rendering af Sorø Idræts- og Kulturby">
-</figure>
-```
+## Skifte et baggrundsbillede
 
-Logo-eksempel (i citat-sliden):
+I `index.html` ligger baggrunden som inline-style på sliden:
 
 ```html
-<span class="logo-chip"><img src="assets/images/logo-dif.svg" alt="DIF"></span>
+<section class="slide slide-deep slide-bg" style="background-image:url('assets/images/multihal.jpg')">
 ```
 
-Tip: hold billeder under ~500 KB (komprimeret JPG/WebP), så slidene loader hurtigt.
+Byt filnavnet ud, eller læg en ny fil her med samme navn.
+
+## Tilføje flere billeder
+
+Læg nye filer her (helst komprimeret JPG/WebP under ~500 KB) og referér dem
+med `assets/images/dit-billede.jpg`.

@@ -11,7 +11,6 @@ navigere med prikkerne i højre side eller med piletasterne ↑ / ↓.
 
 ```
 index.html          → forsiden (fuldskærms slide-deck)
-oekonomi.html       → underside: tallene bag (anlægsbudget, finansiering, drift)
 om.html             → underside: om projektet / kontakt
 css/style.css       → alt design. Farver styres af CSS-variabler i toppen af filen
 js/main.js          → slide-navigation, tal-animation, citat-indlæsning

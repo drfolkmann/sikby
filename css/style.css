@@ -91,10 +91,10 @@ p { margin: 0 0 1rem; }
   background: var(--lime); color: #10301d;
   box-shadow: 0 4px 14px rgba(0,0,0,.25);
 }
-/* LBI-logo (cirkulær badge) */
+/* LBI-logo (cirkulær badge) — skaleret til menuhøjden */
 .brand .logo-img {
-  width: 40px; height: 40px; border-radius: 50%;
-  background: #fff; object-fit: cover;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: #fff; object-fit: cover; flex: 0 0 auto;
   box-shadow: 0 4px 14px rgba(0,0,0,.25);
 }
 .hero-logo {
@@ -166,17 +166,22 @@ body.topbar-dark .top-links a { color: var(--ink); }
 }
 
 /* ---------- Baggrundsbillede-slides ---------- */
-.slide-bg {
+/* Højere specificitet end .slide-deep/.slide-dark, så cover ALTID vinder (ingen tiling) */
+.slide.slide-bg {
   color: #fff;
-  background-size: cover; background-position: center; background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
 }
 .slide-bg::before {
   content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background: linear-gradient(180deg, rgba(10,44,28,.55) 0%, rgba(9,34,22,.82) 100%);
+  /* Kraftigt overlay — billedet er et diskret, fadet stemningslag bag teksten */
+  background: linear-gradient(180deg, rgba(9,38,24,.86) 0%, rgba(7,28,18,.95) 100%);
 }
 /* Hero: mørkere i venstre side, så teksten står skarpt */
 .slide-bg.hero-slide::before {
-  background: linear-gradient(90deg, rgba(8,32,20,.86) 0%, rgba(8,32,20,.55) 55%, rgba(8,32,20,.35) 100%);
+  background: linear-gradient(90deg, rgba(7,28,18,.94) 0%, rgba(7,28,18,.80) 55%, rgba(7,28,18,.62) 100%);
 }
 .slide-bg h1,.slide-bg h2,.slide-bg h3 { color:#fff; }
 .slide-bg .kicker { color: var(--lime); }

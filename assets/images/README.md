@@ -1,19 +1,23 @@
 # Billeder
 
-Læg jeres renderinger og fotos her.
+Læg jeres renderinger og fotos her. Foreslåede filnavne (matcher placeholder-teksterne på sitet):
 
-Foreslåede filnavne (så de matcher placeholder-teksterne på sitet):
+- `placering.jpg` — kort/luftfoto i "Placering"-sliden
+- `render-1.jpg`, `render-2.jpg`, `render-3.jpg` — visualiseringerne i "Sådan kommer det til at se ud"
+- `logo-dif.svg`, `logo-dgi.svg`, `logo-dpf.svg` — forbund/interessent-logoer
 
-- `vision.jpg` — hovedbillede i Vision-sektionen
-- `render-1.jpg`, `render-2.jpg`, `render-3.jpg` — galleriet "Sådan bliver det"
-- `logo-dgi.svg`, `logo-dif.svg`, `logo-dpf.svg` — interessent-logoer
-
-Når filen ligger her, udskift den tilhørende placeholder i HTML'en, fx:
+Når filen ligger her, udskift den tilhørende placeholder-boks i `index.html`, fx:
 
 ```html
 <figure class="figure">
-  <img src="assets/images/vision.jpg" alt="Rendering af det kommende anlæg">
+  <img src="assets/images/render-1.jpg" alt="Rendering af Sorø Idræts- og Kulturby">
 </figure>
 ```
 
-Tip: hold billeder under ~500 KB (helst komprimeret JPG/WebP), så siden loader hurtigt.
+Logo-eksempel (i citat-sliden):
+
+```html
+<span class="logo-chip"><img src="assets/images/logo-dif.svg" alt="DIF"></span>
+```
+
+Tip: hold billeder under ~500 KB (komprimeret JPG/WebP), så slidene loader hurtigt.

@@ -7,3 +7,7 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# Interne arbejdsdokumenter (ikke til den offentlige side)
+pdf_text_tmp.txt
+Soroe_Idraets_og_Kulturby_Oekonomi.pdf

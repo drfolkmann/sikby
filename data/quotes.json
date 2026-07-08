@@ -1,24 +1,24 @@
 [
   {
-    "text": "Sikby fortjener et sted, hvor foreningerne kan mødes. Det her projekt kan blive hjertet i vores by.",
+    "text": "Den voksende bydel mangler steder til idræt, kultur og samvær på tværs af alder. Sorø Idræts- og Kulturby rammer præcis det behov.",
     "name": "Navn Navnesen",
-    "org": "Formand, lokal forening",
-    "role": "Forening"
-  },
-  {
-    "text": "Vi bakker op om initiativer, der styrker det lokale foreningsliv og får flere i bevægelse.",
-    "name": "Navn Navnesen",
-    "org": "Kommunen",
+    "org": "Sorø Kommune",
     "role": "Kommune"
   },
   {
-    "text": "Et samlingssted som dette kan gøre en reel forskel for fællesskabet i området.",
+    "text": "En foreningsdrevet model, hvor kommunen medfinansierer og fonde bidrager, er velkendt og gennemprøvet i Danmark. Det er sund fornuft.",
     "name": "Navn Navnesen",
-    "org": "DGI",
-    "role": "Interessent"
+    "org": "DIF / DGI",
+    "role": "Forbund"
   },
   {
-    "text": "Jeg glæder mig til at følge projektet — det er præcis den slags drøm en by kan samles om.",
+    "text": "Padel skaber fundamentet — men det er fitness, gymnastik, dans og klublivet, der gør huset til byens samlingspunkt.",
+    "name": "Navn Navnesen",
+    "org": "Lokal forening",
+    "role": "Forening"
+  },
+  {
+    "text": "Endelig et sted, hvor både børn, unge og ældre kan mødes under ét tag. Det her kan blive hjertet i Frederiksberg.",
     "name": "En god ven af projektet",
     "org": "",
     "role": "Ven"

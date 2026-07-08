@@ -1,20 +1,30 @@
-# Sikby
+# Sorø Idræts- og Kulturby (SIKB)
 
-Enkel one-page hjemmeside for visionen om et nyt idræts- og foreningsanlæg i Sikby.
-Bygget som en statisk side og hostet gratis på **GitHub Pages**.
+Hjemmeside for visionen om et samlet idræts- og kulturhus på Dyhr Park, Frederiksberg —
+bygget af Lynge-Broby IF. Statisk side, hostet gratis på **GitHub Pages**.
+
+Forsiden er en **fuldskærms "slide-deck" oplevelse**: hver sektion fylder skærmen og
+snapper på plads når man scroller (som at skifte slide i PowerPoint). Man kan også
+navigere med prikkerne i højre side eller med piletasterne ↑ / ↓.
 
 ## Sådan er sitet bygget op
 
 ```
-index.html          → forsiden (one-page med scroll-sektioner)
-vision.html         → underside: uddybet vision
+index.html          → forsiden (fuldskærms slide-deck)
+oekonomi.html       → underside: tallene bag (anlægsbudget, finansiering, drift)
 om.html             → underside: om projektet / kontakt
 css/style.css       → alt design. Farver styres af CSS-variabler i toppen af filen
-js/main.js          → mobilmenu, citat-indlæsning, scroll-animation
+js/main.js          → slide-navigation, tal-animation, citat-indlæsning
 data/quotes.json    → CITATERNE — her tilføjer I nye (se nedenfor)
 assets/images/      → billeder og renderinger
 .nojekyll           → sørger for at GitHub Pages serverer filerne råt
 ```
+
+## Sådan tilføjer/ændrer I en slide
+
+Hver slide er en `<section class="slide ...">` i `index.html`. Farvetemaer:
+`slide-dark` / `slide-deep` (grønne), `slide-light` / `slide-alt` (lyse) — skift
+frit for at ændre rytmen. `data-label` er navnet i prik-navigationen.
 
 ## Sådan tilføjer I et citat
 

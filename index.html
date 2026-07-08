@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sikby — vores vision for et samlende idræts- og foreningsanlæg</title>
-  <meta name="description" content="Sikby: visionen om et nyt idræts- og foreningsanlæg, der samler byens foreninger, borgere og fællesskaber. Se visionen, læs støtten fra kommune og interessenter." />
+  <title>Sorø Idræts- og Kulturby (SIKB) — En bydel i vækst, en by i bevægelse</title>
+  <meta name="description" content="Sorø Idræts- og Kulturby (SIKB): visionen om et samlet idræts- og kulturhus på Dyhr Park, Frederiksberg. Bygget af Lynge-Broby IF — lokalt forankret, frivilligt drevet, bredt finansieret." />
 
-  <!-- Open Graph (deling på Facebook/LinkedIn) -->
-  <meta property="og:title" content="Sikby — vision for et nyt idræts- og foreningsanlæg" />
-  <meta property="og:description" content="Et samlingssted for idræt, foreninger og fællesskab. Se visionen." />
+  <meta property="og:title" content="Sorø Idræts- og Kulturby (SIKB)" />
+  <meta property="og:description" content="En bydel i vækst, en by i bevægelse. Visionen om et samlet idræts- og kulturhus i Frederiksberg." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="da_DK" />
 
@@ -19,182 +18,224 @@
 </head>
 <body>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header">
-    <nav class="nav container" aria-label="Hovednavigation">
-      <a href="index.html" class="brand">
-        <span class="logo-dot" aria-hidden="true">S</span>
-        Sikby
-      </a>
-      <button class="nav-toggle" aria-label="Åbn menu" aria-expanded="false" aria-controls="menu">☰</button>
-      <ul class="nav-links" id="menu">
-        <li><a href="#vision">Vision</a></li>
-        <li><a href="#saadan">Sådan bliver det</a></li>
-        <li><a href="#citater">Citater</a></li>
-        <li><a href="#interessenter">Interessenter</a></li>
-        <li><a href="vision.html">Uddybet vision</a></li>
-        <li><a class="btn btn-accent" href="#kontakt">Vær med</a></li>
-      </ul>
+  <div class="progress" id="progress"></div>
+
+  <!-- ============ TOP-BAR ============ -->
+  <div class="topbar">
+    <a href="index.html" class="brand"><span class="mark">SIKB</span>Sorø Idræts- og Kulturby</a>
+    <nav class="top-links" aria-label="Genveje">
+      <a href="#slide-projektet">Projektet</a>
+      <a href="#slide-oekonomi">Økonomi</a>
+      <a href="#slide-citater">Citater</a>
+      <a href="oekonomi.html">Tallene bag</a>
+      <a href="#slide-kontakt">Vær med</a>
     </nav>
-  </header>
+  </div>
 
-  <main>
+  <!-- ============ PRIK-NAVIGATION ============ -->
+  <nav class="dots" id="dots" aria-label="Slide-navigation"></nav>
 
-    <!-- ============ HERO ============ -->
-    <section class="hero">
+  <!-- ============ DECK ============ -->
+  <main class="deck" id="deck">
+
+    <!-- 1 · HERO -->
+    <section class="slide slide-dark hero-slide" id="slide-hero" data-label="Forside">
       <div class="container">
-        <h1>Et samlingssted for hele Sikby</h1>
-        <p>Vi drømmer om et nyt idræts- og foreningsanlæg, der giver plads til bevægelse, fællesskab og frivillighed — på tværs af generationer og foreninger.</p>
-        <div class="hero-actions">
-          <a class="btn btn-accent" href="#vision">Se visionen</a>
-          <a class="btn btn-ghost" href="#kontakt">Bak op om projektet</a>
+        <span class="kicker reveal">Lynge-Broby IF · Mere end sport</span>
+        <h1 class="reveal d1">Sorø Idræts-<br>og Kulturby</h1>
+        <p class="hero-tagline reveal d2">”En bydel i vækst, en by i bevægelse”</p>
+        <p class="slide-lead reveal d3">Visionen om ét samlet hus til idræt, kultur og fællesskab i Frederiksberg — lokalt forankret, frivilligt drevet og bredt finansieret.</p>
+        <div class="hero-actions reveal d4">
+          <a class="btn btn-lime" href="#slide-behovet">Se visionen</a>
+          <a class="btn btn-ghost" href="#slide-kontakt">Bak op om projektet</a>
         </div>
       </div>
+      <div class="scroll-hint" aria-hidden="true"><span>Scroll</span><span class="chev"></span></div>
     </section>
 
-    <!-- ============ VISION ============ -->
-    <section id="vision">
+    <!-- 2 · BEHOVET -->
+    <section class="slide slide-light" id="slide-behovet" data-label="Behovet">
       <div class="container">
-        <div class="split">
-          <div class="reveal">
-            <span class="eyebrow">Visionen</span>
-            <h2>Rammerne, der binder byen sammen</h2>
-            <p class="lead">Sikby mangler et sted, hvor foreningslivet kan mødes. Vores vision er et moderne anlæg med plads til idræt, arrangementer og hverdagsliv — bygget af og til fællesskabet.</p>
-            <p>Et sted hvor børn kan træne, hvor seniorer kan mødes, og hvor foreninger kan vokse. Et anlæg, der ikke bare er mursten, men et samlingspunkt for byens liv.</p>
-            <p><a href="vision.html">Læs den uddybede vision →</a></p>
-          </div>
-          <figure class="figure reveal">
-            <!-- Erstat placeholder med jeres rendering: <img src="assets/images/vision.jpg" alt="Rendering af det kommende anlæg"> -->
-            <div class="placeholder">
-              Rendering kommer her
-              <span>Læg jeres billede i assets/images/ og udskift denne boks</span>
-            </div>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PILLARS ============ -->
-    <section class="section-alt">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Hvorfor</span>
-          <h2>Tre grunde til at bygge Sikby</h2>
+        <div class="section-head">
+          <span class="kicker reveal">Behovet</span>
+          <h2 class="reveal d1">Hvorfor — og hvorfor nu</h2>
+          <p class="slide-lead reveal d2">Frederiksberg-bydelen vokser hurtigt — men mangler idræts-, kultur- og mødesteder. Behovet er akut og anerkendt.</p>
         </div>
         <div class="grid-cards">
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🤝</div>
-            <h3>Fællesskab</h3>
-            <p>Ét sted hvor foreninger, familier og frivillige mødes på tværs af alder og interesser.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🏃</div>
-            <h3>Bevægelse for alle</h3>
-            <p>Faciliteter til bredden — fra de yngste til de ældste, uanset niveau og ambition.</p>
-          </article>
-          <article class="card reveal">
-            <div class="icon" aria-hidden="true">🌱</div>
-            <h3>Vækst i byen</h3>
-            <p>Et anlæg gør Sikby mere attraktiv at bo i og styrker foreningslivet mange år frem.</p>
-          </article>
+          <article class="card reveal d2"><div class="num">1</div><h3>Et anerkendt behov</h3><p>Også kommunen ser, at den voksende bydel mangler tilbud til idræt, kultur og samvær på tværs af alder.</p></article>
+          <article class="card reveal d3"><div class="num">2</div><h3>Ellers kommunens opgave</h3><p>Tager foreninger og frivillige ikke lead, skal kommunen selv etablere og drive tilbuddet — for fuld kommunal regning.</p></article>
+          <article class="card reveal d4"><div class="num">3</div><h3>Vi løfter opgaven</h3><p>Lokalt forankret, frivilligt drevet og bredt finansieret. Kommunen bidrager med medfinansiering, ikke fuld udgift.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- ============ SÅDAN BLIVER DET (galleri) ============ -->
-    <section id="saadan">
+    <!-- 3 · PROJEKTET -->
+    <section class="slide slide-deep" id="slide-projektet" data-label="Projektet">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Sådan bliver det</span>
-          <h2>Visualisering af anlægget</h2>
-          <p class="lead">Her viser vi renderinger og skitser af projektet, efterhånden som de bliver klar.</p>
-        </div>
-        <div class="gallery">
-          <figure class="figure reveal">
-            <div class="placeholder">Rendering 1<span>assets/images/render-1.jpg</span></div>
-          </figure>
-          <figure class="figure reveal">
-            <div class="placeholder">Rendering 2<span>assets/images/render-2.jpg</span></div>
-          </figure>
-          <figure class="figure reveal">
-            <div class="placeholder">Rendering 3<span>assets/images/render-3.jpg</span></div>
+        <span class="kicker reveal">Projektet</span>
+        <h2 class="reveal d1">Ca. 2.900 m² under ét tag</h2>
+        <p class="slide-lead reveal d2">Et samlet hus, der giver plads til idræt, kultur og hverdagsliv — side om side.</p>
+        <ul class="facility-list">
+          <li class="reveal d2"><span class="fm">980 m²</span> Multihal</li>
+          <li class="reveal d2"><span class="fm">1.377 m²</span> Padelbaner (5 stk.)</li>
+          <li class="reveal d3"><span class="fm">240 m²</span> Lounge-område</li>
+          <li class="reveal d3"><span class="fm">189 m²</span> Café / klubhus</li>
+          <li class="reveal d4"><span class="fm">2 × 32 m²</span> Omklædning</li>
+          <li class="reveal d4"><span class="fm">+</span> Mødelokale, depot, teknik og WC</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 · PLACERING -->
+    <section class="slide slide-light" id="slide-placering" data-label="Placering">
+      <div class="container">
+        <div class="split">
+          <div>
+            <span class="kicker reveal">Placering</span>
+            <h2 class="reveal d1">På Dyhr Park, Frederiksberg</h2>
+            <p class="slide-lead reveal d2">Hallen placeres på græsanlægget, ca. 75–100 m fra den eksisterende hal.</p>
+            <p class="reveal d3">Det bevarer kunstgræs- og fodboldbanerne og giver plads til en samlet sportsby på sigt.</p>
+          </div>
+          <figure class="figure reveal d2">
+            <!-- Erstat med kort eller foto: <img src="assets/images/placering.jpg" alt="Placering på Dyhr Park"> -->
+            <div class="placeholder">Kort / luftfoto<span>assets/images/placering.jpg</span></div>
           </figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ CITATER ============ -->
-    <section id="citater" class="section-alt">
+    <!-- 5 · VISUALISERING -->
+    <section class="slide slide-deep" id="slide-visualisering" data-label="Visualisering">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Opbakning</span>
-          <h2>Hvad siger de om Sikby?</h2>
-          <p class="lead">Stemmer fra venner, kommunen, interessenter og foreninger. Listen vokser i takt med projektet.</p>
+        <div class="section-head">
+          <span class="kicker reveal">Sådan kommer det til at se ud</span>
+          <h2 class="reveal d1">Visualisering af huset</h2>
+          <p class="slide-lead reveal d2">Stemningsbilleder af, hvordan huset kan tage sig ud — med café og ophold ud mod fodboldbanerne. Det endelige udtryk fastlægges i projekteringen.</p>
         </div>
-        <!-- Citater indlæses fra data/quotes.json af js/main.js -->
-        <div class="quotes" id="quotes-list" aria-live="polite">
+        <div class="grid-cards">
+          <figure class="figure reveal d2"><div class="placeholder">Rendering 1<span>assets/images/render-1.jpg</span></div></figure>
+          <figure class="figure reveal d3"><div class="placeholder">Rendering 2<span>assets/images/render-2.jpg</span></div></figure>
+          <figure class="figure reveal d4"><div class="placeholder">Rendering 3<span>assets/images/render-3.jpg</span></div></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · MERE END PADEL -->
+    <section class="slide slide-light" id="slide-indhold" data-label="Mere end padel">
+      <div class="container">
+        <span class="kicker reveal">Mere end padel</span>
+        <h2 class="reveal d1">Et hus for hele foreningslivet</h2>
+        <div class="cols3">
+          <div class="col-card reveal d2">
+            <h3>Sportshal &amp; padel</h3>
+            <ul><li>Padel</li><li>Foreningsfitness</li><li>E-bike &amp; spinning</li><li>Klatring</li></ul>
+          </div>
+          <div class="col-card reveal d3">
+            <h3>Multihal</h3>
+            <ul><li>Gymnastik</li><li>Dans</li><li>Badminton</li><li>Håndbold</li><li>Multisport for unge</li></ul>
+          </div>
+          <div class="col-card reveal d4">
+            <h3>Klub- &amp; kulturhus</h3>
+            <ul><li>Værested for unge</li><li>Mødested for ældre</li><li>Kultur &amp; foredrag</li><li>Senior- og holdaktiviteter</li></ul>
+          </div>
+        </div>
+        <p class="slide-lead reveal d4" style="margin-top:1.4rem;">Padel rykker ind først og skaber det økonomiske fundament — men fitness, gymnastik, dans og klubliv bliver hurtigt en stor del af livet i huset.</p>
+      </div>
+    </section>
+
+    <!-- 7 · TRE SPOR -->
+    <section class="slide slide-alt" id="slide-spor" data-label="Tre spor">
+      <div class="container">
+        <span class="kicker reveal">Projektets indhold</span>
+        <h2 class="reveal d1">Tre spor, der aktiverer borgerne</h2>
+        <div class="grid-cards">
+          <article class="card reveal d2"><div class="icon">🧓</div><h3>Ældre</h3><p>Et mødested i klublokalet — kaffe, hygge, strik og hækle — kombineret med bevægelse som seniorhold og padel.</p></article>
+          <article class="card reveal d3"><div class="icon">🧒</div><h3>Unge &amp; børn</h3><p>Værested, dans, fitness og padel i idrætsundervisning og SFO. En idrætslærer bygger bro mellem skole og forening.</p></article>
+          <article class="card reveal d4"><div class="icon">🤝</div><h3>Inklusion</h3><p>Foreningsfællesskab for børn med særlige behov — på tværs af idrætsgrene, inspireret af Lykkeligaen.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8 · VOKSET -->
+    <section class="slide slide-deep" id="slide-vokset" data-label="Sådan er det vokset">
+      <div class="container">
+        <span class="kicker reveal">Sådan er projektet vokset</span>
+        <h2 class="reveal d1">Fra lille padelprojekt til samlet idræts- og kulturby</h2>
+        <div class="timeline">
+          <div class="tl-step reveal d2" data-step="1"><h3>Start</h3><p>Et lille foreningsprojekt: padel, fitness og klatring — helt uden kommunal medfinansiering.</p></div>
+          <div class="tl-step reveal d3" data-step="2"><h3>Vokset</h3><p>Udviklet til at understøtte kommunens og Frederiksbergs vækst og den manglende mulighed for aktiviteter.</p></div>
+          <div class="tl-step reveal d4" data-step="3"><h3>Nu</h3><p>Et samlet forslag til idræt og kultur — hvor øget vækst bliver til øget bevægelse.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 · ØKONOMI -->
+    <section class="slide slide-light" id="slide-oekonomi" data-label="Økonomi">
+      <div class="container">
+        <span class="kicker reveal">Det korte budskab</span>
+        <h2 class="reveal d1">Finansieret bredt — medfinansiering, ikke byrde</h2>
+        <p class="slide-lead reveal d2">Samlet anlægsbudget: <strong data-count="34.8" data-suffix=" mio. kr." data-dec="1">34,8 mio. kr.</strong> ekskl. moms — arkitekt-gennemgået.</p>
+        <div class="finance" id="finance">
+          <div class="fin-row reveal d2"><div class="fin-top"><span>Kommunalt anlægstilskud</span><small>20 mio. kr.</small></div><div class="fin-bar"><span data-pct="57"></span></div></div>
+          <div class="fin-row reveal d3"><div class="fin-top"><span>Lån — Kommunekredit (m. garanti)</span><small>8,8 mio. kr.</small></div><div class="fin-bar"><span data-pct="25"></span></div></div>
+          <div class="fin-row reveal d3"><div class="fin-top"><span>Fondsmidler &amp; private</span><small>3 mio. kr.</small></div><div class="fin-bar"><span data-pct="9"></span></div></div>
+          <div class="fin-row reveal d4"><div class="fin-top"><span>LBI egenfinansiering</span><small>3 mio. kr.</small></div><div class="fin-bar"><span data-pct="9"></span></div></div>
+        </div>
+        <p class="reveal d4" style="margin-top:1.4rem;"><a class="btn btn-solid" href="oekonomi.html">Se alle tallene bag →</a></p>
+      </div>
+    </section>
+
+    <!-- 10 · KØREPLAN -->
+    <section class="slide slide-deep" id="slide-koreplan" data-label="Køreplan">
+      <div class="container">
+        <span class="kicker reveal">Køreplan</span>
+        <h2 class="reveal d1">Vejen mod en politisk beslutning</h2>
+        <div class="timeline">
+          <div class="tl-step reveal d2" data-step="1"><h3>Nu → sommer 2026</h3><p>Færdiggøre materiale og afklare moms, forsyning og garanti med kommunen.</p></div>
+          <div class="tl-step reveal d2" data-step="2"><h3>Efterår 2026</h3><p>Politisk dialog, opbakning på tværs af partierne og en hensigtserklæring.</p></div>
+          <div class="tl-step reveal d3" data-step="3"><h3>Budget 2027</h3><p>Projektet prioriteres i budget 2027, der vedtages i oktober 2026.</p></div>
+          <div class="tl-step reveal d4" data-step="4"><h3>2027 og frem</h3><p>Lokalplan, fondsansøgninger og opstart på delprojekterne.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11 · CITATER -->
+    <section class="slide slide-alt" id="slide-citater" data-label="Citater">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker reveal">Opbakning</span>
+          <h2 class="reveal d1">Hvad siger de om SIKB?</h2>
+          <p class="slide-lead reveal d2">Stemmer fra venner, kommunen, forbund og foreninger. Listen vokser i takt med projektet.</p>
+        </div>
+        <div class="quotes reveal d2" id="quotes-list" aria-live="polite">
           <p class="quotes-empty">Indlæser citater …</p>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ INTERESSENTER ============ -->
-    <section id="interessenter">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow">Sammen med</span>
-          <h2>Interessenter & foreninger</h2>
-          <p class="lead">Vi arbejder sammen med landsdækkende organisationer og lokale foreninger om at gøre visionen til virkelighed.</p>
-        </div>
-        <div class="logos reveal">
-          <!-- Skift teksten ud med logo-billeder når de er klar:
-               <span class="logo-chip"><img src="assets/images/logo-dgi.svg" alt="DGI"></span> -->
-          <span class="logo-chip">DGI</span>
+        <div class="logos reveal d3" style="margin-top:1.6rem;">
           <span class="logo-chip">DIF</span>
-          <span class="logo-chip">DPF</span>
-          <span class="logo-chip">Lokale foreninger</span>
-          <span class="logo-chip">Kommunen</span>
+          <span class="logo-chip">DGI</span>
+          <span class="logo-chip">Dansk Padel Forbund</span>
+          <span class="logo-chip">Sorø Kommune</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ CTA / KONTAKT ============ -->
-    <section id="kontakt">
+    <!-- 12 · KONTAKT / CTA -->
+    <section class="slide slide-dark" id="slide-kontakt" data-label="Vær med">
       <div class="container">
-        <div class="cta reveal">
-          <h2>Vil du være med?</h2>
-          <p>Er du forening, borger eller interessent, der vil bakke op om Sikby? Vi vil meget gerne høre fra dig.</p>
-          <div class="hero-actions">
-            <a class="btn btn-accent" href="mailto:kontakt@sikby.dk">Skriv til os</a>
+        <div class="cta-center">
+          <span class="kicker reveal">Fællesskab bærer projektet</span>
+          <h2 class="reveal d1">Vil du være med?</h2>
+          <p class="slide-lead reveal d2" style="margin-inline:auto;">Er du borger, forening, forbund eller interessent, der vil bakke op om Sorø Idræts- og Kulturby? Vi vil meget gerne høre fra dig.</p>
+          <div class="hero-actions reveal d3">
+            <a class="btn btn-lime" href="mailto:kontakt@sikb.dk">Skriv til os</a>
             <a class="btn btn-ghost" href="om.html">Om projektet</a>
           </div>
+          <p class="reveal d4" style="margin-top:2.5rem; opacity:.7; font-size:.9rem;">Sorø Idræts- og Kulturby · Lynge-Broby Idrætsforening</p>
         </div>
       </div>
     </section>
 
   </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <div class="footer-brand">Sikby</div>
-          <p>Visionen om et samlende idræts- og foreningsanlæg.</p>
-        </div>
-        <ul class="footer-links">
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#citater">Citater</a></li>
-          <li><a href="vision.html">Uddybet vision</a></li>
-          <li><a href="om.html">Om projektet</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-bottom">
-        © <span id="year"></span> Sikby · Et frivilligt initiativ
-      </div>
-    </div>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
